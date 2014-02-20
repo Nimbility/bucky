@@ -15,5 +15,9 @@
             %li=link_to "home", "#"
             %li=link_to "find a kicker", "#"
 
+    /joshy these are used by Devise for alerts- if you got a better way to display this shit, have at it
+    %p{:class => "notice"}= notice
+    %p{:class=>"alert"}= alert
+
     = yield
     = javascript_include_tag "application", "data-turbolinks-track" => true
